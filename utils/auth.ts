@@ -1,5 +1,5 @@
 import { generateHash } from "./generateHash"
-import { AuthParams, ApiKeys } from "@/types/auth"
+import { AuthParams, ApiKeys } from "@/types"
 
 function getAuthParams(keys: ApiKeys): AuthParams {
   const ts = new Date().getTime().toString()

@@ -1,5 +1,5 @@
 import { createHash } from "crypto"
-import { HashParams } from "@/types/auth"
+import { HashParams } from "@/types"
 
 export function generateHash({ ts, privateKey, publicKey }: HashParams): string {
   if (!ts || !privateKey || !publicKey) {
